@@ -3,6 +3,7 @@ package org.example.auth.entity;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
+import lombok.Builder.Default;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -32,6 +33,7 @@ public class User {
     private String profilePictureUrl;
 
     @Column(name = "is_active", nullable = false)
+    @Default
     private boolean isActive = true;
 
     @Column(name = "created_at", nullable = false)

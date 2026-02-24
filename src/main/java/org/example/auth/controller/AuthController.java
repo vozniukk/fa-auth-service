@@ -13,6 +13,7 @@ import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDateTime;
+import java.util.Map;
 
 /**
  * REST контроллер для аутентификации
@@ -147,6 +148,3 @@ public class AuthController {
         return ResponseEntity.ok(Map.of("status", "OK"));
     }
 }
-
-import java.util.Map;
-
